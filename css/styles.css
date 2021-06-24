@@ -1,21 +1,3 @@
-body {
-  background-color: #e5e5e5;
-  color: #212121;
-}
-
-.list {
-  list-style: none;
-}
-
-.site-nav .link {
-  color: #212121;
-}
-.site-nav .link:hover {
-  color: #2196f3;
-}
-
-}
-}
 /* Колір основного тексту #212121, 100% */
 /* другорядний колір тексту #757575, 100% */
 /* Білий колір #FFFFFF */
@@ -25,4 +7,63 @@ body {
 rgba(255, 255, 255, 0.6);*/
 
 /* другорядний колір фону background: #F5F4FA;
- */ ;
+ */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent: #2196f3;
+}
+
+/* Фон та колір основного тексту */
+body {
+  background-color: #e5e5e5;
+  color: var(--primary-text-color);
+}
+
+/* Прибираємо кільця в списку */
+
+.list {
+  list-style: none;
+}
+
+/* Logo */
+
+.logo:focus {
+  color: var(--accent);
+}
+
+/* Навігація в шапці */
+
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent);
+}
+
+/* Hero */
+
+.hero-title {
+  color: var(--title-text-color);
+}
+
+/* Features */
+
+.features .features-title {
+  color: var(--title-text-color);
+}
+
+/* Examples */
+
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* Сторінка Portfolio */
+/* Button */
+
+.button {
+  color: var(--title-text-color);
+}
