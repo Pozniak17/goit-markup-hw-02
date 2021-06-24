@@ -13,6 +13,7 @@ rgba(255, 255, 255, 0.6);*/
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent: #2196f3;
+  --primary-bg-color: #f5f4fa;
 }
 
 /* Фон та колір основного тексту */
@@ -43,10 +44,18 @@ body {
   color: var(--accent);
 }
 
+.site-links .link {
+  color: var(--primary-text-color);
+}
+
 /* Hero */
 
 .hero-title {
   color: var(--title-text-color);
+}
+.hero-btn {
+  color: #ffffff;
+  background-color: var(--accent);
 }
 
 /* Features */
@@ -64,6 +73,16 @@ body {
 /* Сторінка Portfolio */
 /* Button */
 
-.button {
+.filters-button {
   color: var(--title-text-color);
+  background-color: #f5f4fa;
+}
+
+/* Footer address */
+.connection .address {
+  color: #ffffff;
+}
+
+.connection .link {
+  color: rgba(255, 255, 255, 0.6);
 }
