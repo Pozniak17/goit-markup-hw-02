@@ -8,7 +8,7 @@ rgba(255, 255, 255, 0.6);*/
 
 /* другорядний колір фону background: #F5F4FA;
  */
-
+/* Загальні стилі */
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -44,10 +44,21 @@ body {
   color: var(--accent);
 }
 
+/* Підсвічування поточної сторінки */
+.site-nav .link.current {
+  color: var(--accent);
+}
+
 .site-links .link {
   color: var(--primary-text-color);
 }
 
+.site-links .link:hover,
+.site-links .link:focus {
+  color: var(--accent);
+}
+
+/* Стилі для index.html */
 /* Hero */
 
 .hero-title {
@@ -70,12 +81,16 @@ body {
   color: var(--title-text-color);
 }
 
-/* Сторінка Portfolio */
+/* Стилі для Portfolio.html */
 /* Button */
 
 .filters-button {
   color: var(--title-text-color);
   background-color: #f5f4fa;
+}
+.filters-button:hover,
+.filters-button:focus {
+  color: var(--accent);
 }
 
 /* Footer address */
@@ -85,4 +100,9 @@ body {
 
 .connection .link {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.connection .link:hover,
+.connection .link:focus {
+  color: var(--accent);
 }
