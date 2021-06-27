@@ -13,7 +13,8 @@ rgba(255, 255, 255, 0.6);*/
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent: #2196f3;
-  --primary-bg-color: #f5f4fa;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
 }
 
 /* Фон та колір основного тексту */
@@ -64,8 +65,8 @@ body {
 .hero-title {
   color: var(--title-text-color);
 }
-.hero-btn {
-  color: #ffffff;
+.hero-button {
+  color: var(--primary-bg-color);
   background-color: var(--accent);
 }
 
@@ -86,16 +87,17 @@ body {
 
 .filters-button {
   color: var(--title-text-color);
-  background-color: #f5f4fa;
+  background-color: var(--secondary-bg-color);
 }
 .filters-button:hover,
 .filters-button:focus {
-  color: var(--accent);
+  color: var(--primary-bg-color);
+  background-color: var(--accent);
 }
 
 /* Footer address */
 .connection .address {
-  color: #ffffff;
+  color: var(--primary-bg-color);
 }
 
 .connection .link {
