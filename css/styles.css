@@ -21,6 +21,8 @@ rgba(255, 255, 255, 0.6);*/
 body {
   background-color: #e5e5e5;
   color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
 }
 
 /* Прибираємо кільця в списку */
@@ -35,6 +37,9 @@ body {
   color: var(--accent);
 }
 
+.logo {
+  font-family: Raleway, sans-serif;
+}
 /* Навігація в шапці */
 
 .site-nav .link {
