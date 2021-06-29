@@ -21,29 +21,41 @@ rgba(255, 255, 255, 0.6);*/
 body {
   background-color: #e5e5e5;
   color: var(--primary-text-color);
-
   font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
 
 /* Прибираємо кільця в списку */
-
 .list {
   list-style: none;
 }
 
 /* Logo */
+.logo {
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
 
 .logo:focus {
   color: var(--accent);
 }
 
-.logo {
-  font-family: Raleway, sans-serif;
+/* Кнопки - унаслідування шрифту*/
+button {
+  font-family: inherit;
 }
-/* Навігація в шапці */
 
+/* Навігація в шапці */
 .site-nav .link {
   color: var(--title-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -57,6 +69,11 @@ body {
 
 .site-links .link {
   color: var(--primary-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .site-links .link:hover,
@@ -68,7 +85,13 @@ body {
 /* Hero */
 
 .hero-title {
-  color: var(--title-text-color);
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .hero-button {
   color: var(--primary-bg-color);
@@ -79,20 +102,54 @@ body {
 
 .features .features-title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 
+.features .text {
+  font-size: 14px;
+  line-height: 1.71;
+}
 /* Examples */
 
 .section-title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
 }
 
+.team-section {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.examples-works .roles {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.footer-logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
 /* Стилі для Portfolio.html */
 /* Button */
 
 .filters-button {
   color: var(--title-text-color);
   background-color: var(--secondary-bg-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
 }
 .filters-button:hover,
 .filters-button:focus {
@@ -100,16 +157,44 @@ body {
   background-color: var(--accent);
 }
 
+.example-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.example .models {
+  font-size: 16px;
+  line-height: 1.87px;
+}
+
 /* Footer address */
+
 .connection .address {
   color: var(--primary-bg-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 .connection .link {
   color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 .connection .link:hover,
 .connection .link:focus {
   color: var(--accent);
+}
+
+/* Колір секції в index.html */
+.hero {
+  background-color: #2f303a;
+}
+.works {
+  background-color: #f5f4fa;
 }
