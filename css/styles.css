@@ -32,6 +32,7 @@ body {
 
 /* Logo */
 .logo {
+  color: #000000;
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -40,6 +41,10 @@ body {
 }
 
 .logo:focus {
+  color: var(--accent);
+}
+
+.accent {
   color: var(--accent);
 }
 
@@ -140,11 +145,16 @@ button {
 }
 
 .footer-logo {
+  color: var(--primary-bg-color);
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+}
+
+.footer-logo:focus {
+  color: var(--accent);
 }
 /* Стилі для Portfolio.html */
 /* Button */
@@ -178,6 +188,7 @@ button {
 /* Footer address */
 
 .connection .address {
+  text-decoration: none;
   color: var(--primary-bg-color);
   font-style: normal;
   font-size: 14px;
@@ -185,6 +196,7 @@ button {
 }
 
 .connection .link {
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   font-size: 14px;
@@ -202,4 +214,8 @@ button {
 }
 .works {
   background-color: #f5f4fa;
+}
+
+.page-footer {
+  background-color: #2f303a;
 }
