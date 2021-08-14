@@ -31,7 +31,7 @@ body {
 }
 
 /* Logo */
-.logo {
+.header-logo {
   color: #000000;
   text-decoration: none;
   font-family: Raleway, sans-serif;
@@ -40,8 +40,8 @@ body {
   line-height: 1.19;
 }
 
-.logo:hover,
-.logo:focus {
+.header-logo:hover,
+.header-logo:focus {
   color: var(--accent);
 }
 
@@ -90,9 +90,8 @@ button {
 
 /* Стилі для index.html */
 /* Hero */
-
 .hero-title {
-  color: #ffffff;
+  color: var(--primary-bg-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -100,6 +99,7 @@ button {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
 .hero-button {
   color: var(--primary-bg-color);
   background-color: var(--accent);
@@ -109,9 +109,13 @@ button {
   letter-spacing: 0.06em;
 }
 
-/* Features */
+.hero-button:hover {
+  background-color: #188ce8;
+  color: #ffffff;
+}
 
-.features .features-title {
+/* Features */
+.features-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -119,32 +123,42 @@ button {
   text-transform: uppercase;
 }
 
-.features .text {
+.features-text {
   font-size: 14px;
   line-height: 1.71;
 }
-/* Examples */
 
-.section-title {
+/* Примеры */
+.example-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.67;
+  line-height: 1.17;
   text-align: center;
 }
 
-.team-section {
+/* Команда */
+.team-main-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.team-title {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
 
-.examples-works .roles {
+.team-text {
   font-size: 16px;
   line-height: 1.19;
 }
 
+/* Футер */
 .footer-logo {
   color: var(--primary-bg-color);
   font-family: Raleway;
@@ -154,6 +168,7 @@ button {
   text-decoration: none;
 }
 
+.footer-logo:hover,
 .footer-logo:focus {
   color: var(--accent);
 }
@@ -173,7 +188,7 @@ button {
   background-color: var(--accent);
 }
 
-.example-title {
+.project-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -181,9 +196,9 @@ button {
   letter-spacing: 0.06em;
 }
 
-.example .models {
+.project-text {
   font-size: 16px;
-  line-height: 1.87px;
+  line-height: 1.88;
 }
 
 /* Footer address */
