@@ -19,7 +19,6 @@ rgba(255, 255, 255, 0.6);*/
 
 /* Фон та колір основного тексту */
 body {
-  background-color: #e5e5e5;
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
@@ -29,11 +28,13 @@ body {
 .list {
   list-style: none;
 }
+.link {
+  text-decoration: none;
+}
 
 /* Logo */
 .header-logo {
   color: #000000;
-  text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -47,12 +48,6 @@ body {
 
 .accent {
   color: var(--accent);
-}
-
-/* Кнопки - унаслідування шрифту*/
-button {
-  font-family: inherit;
-  cursor: pointer;
 }
 
 /* Навігація в шапці */
@@ -103,6 +98,9 @@ button {
 .hero-button {
   color: var(--primary-bg-color);
   background-color: var(--accent);
+  cursor: pointer;
+  border: transparent;
+  border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -112,6 +110,7 @@ button {
 .hero-button:hover {
   background-color: #188ce8;
   color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Features */
@@ -178,6 +177,9 @@ button {
 .filters-button {
   color: var(--title-text-color);
   background-color: var(--secondary-bg-color);
+  cursor: pointer;
+  border: transparent;
+  border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -186,6 +188,8 @@ button {
 .filters-button:focus {
   color: var(--primary-bg-color);
   background-color: var(--accent);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .project-title {
@@ -230,6 +234,10 @@ button {
 }
 .works {
   background-color: #f5f4fa;
+}
+
+.team {
+  background-color: var(--secondary-bg-color);
 }
 
 .page-footer {
